@@ -3,7 +3,7 @@ from openthai_systemone import SystemOneClient, Noul
 # Customer needs to evaluate (label -> need text); each need is ranked against PRODUCTS separately
 NEEDS = {
     "Developer": "I am a software developer who wants a free, highly customizable desktop for programming and server work, and I want to avoid license fees.",
-    "Beginner": "I am looking for doing web browsing, and messaging. I am not familiar with computers.",
+    "Beginner": "I am looking for a device for web browsing and messaging.",
 }
 
 # Candidates to choose from (name -> description embedded in the question)
@@ -48,4 +48,4 @@ for needs in NEEDS.values():
         yes="{name} is well suited to the customer's needs.",
         no="{name} is not suited to the customer's needs.",
     ):
-        print(f"{name}: {p:.4f}\n")
+        print(f"{name}: {p:.4f}")
