@@ -9,7 +9,7 @@ The generic `decision(state, options, question, yes, no)` function in [main.py](
 The sample calls `decision()` once per need ("Does this OS match the customer's needs?"), so several needs can be evaluated in turn and the results are printed. The sample includes the following two needs:
 
 - `Developer`: a developer who wants to avoid license fees and wants a highly customizable environment
-- `Beginner`: a person who is looking for a device for web browsing and messaging, and is not familiar with computers
+- `Beginner`: a person who is looking for a device for web browsing and messaging
 
 ## Supported languages
 
@@ -62,16 +62,16 @@ On the first run, the model (`iapp/OpenThai-SystemOne`) is downloaded. The execu
 For each need, only the option name and its confidence (a real number from 0 to 1) are printed, from the best match down. The needs are printed one after another in the order of `NEEDS`, with no labels or separators. Example output (the numbers are illustrative):
 
 ```
-Linux Desktop: 0.8500
-macOS: 0.4000
-Windows: 0.3000
-Android: 0.1000
-iOS/iPadOS: 0.0500
-iOS/iPadOS: 0.6000
-Android: 0.5500
-macOS: 0.4500
-Windows: 0.4000
-Linux Desktop: 0.2000
+Linux Desktop: 0.9155
+macOS: 0.6354
+Windows: 0.6061
+iOS/iPadOS: 0.0803
+Android: 0.0316
+iOS/iPadOS: 0.7496
+Android: 0.6954
+Windows: 0.6387
+Linux Desktop: 0.5484
+macOS: 0.4570
 ```
 
 ## Customization
